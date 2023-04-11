@@ -1,1 +1,1 @@
-worker: python STABLEv1
+worker: python worker.py
