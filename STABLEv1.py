@@ -4,7 +4,7 @@ import random
 import sqlite3
 import json
 import asyncio
-
+import os
 
 def init_database():
     conn = sqlite3.connect("discord_bot.db")
@@ -515,4 +515,4 @@ async def before_death_check_task():
     
 
 
-bot.run('MTA4ODE5NzgyNTU1MDA5MDI1MQ.G1zKCx.beB9gEFX9JV7YGT7daCYbfP9EOOS0s-153dyh4')
+bot.run(os.environ['BOT_TOKEN'])
